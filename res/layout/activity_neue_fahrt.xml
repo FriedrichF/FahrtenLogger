@@ -1,0 +1,76 @@
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".LinearLayout" >
+
+     <TextView
+         android:id="@+id/textView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="17dp"
+         android:text="Bezeichnung" />
+
+     <EditText
+         android:id="@+id/bezeichnungInput"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="17dp"
+         android:ems="10"
+         android:nextFocusLeft="@layout/activity_uebersicht" />
+     
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/kmInput"
+        android:layout_alignLeft="@+id/kmInput"
+        android:text="Kilometer" />
+
+    <EditText
+        android:id="@+id/kmInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/datePicker"
+        android:layout_alignLeft="@+id/bezeichnungInput"
+        android:layout_marginBottom="22dp"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:nextFocusLeft="@id/bezeichnungInput" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteKategorie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10">
+
+        <requestFocus />
+    </AutoCompleteTextView>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Datum" />
+
+    <TextView
+        android:id="@+id/datumText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/datumButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Datum ändern" />
+
+    <Button
+        android:id="@+id/neueFahrtButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eintragen" />
+
+</LinearLayout>
